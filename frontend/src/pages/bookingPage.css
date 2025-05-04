@@ -1,0 +1,587 @@
+/* Page Container */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/* Payment Dialog Styles */
+.payment-dialog {
+  width: 500px;
+  max-width: 90%;
+}
+
+.card-element-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-form input:focus {
+  border-color: #606060;
+  box-shadow: 0 0 0 2px rgba(96, 96, 96, 0.2);
+  outline: none;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.payment-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.payment-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.payment-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  margin-right: 10px;
+  margin-left: 0;
+  flex: 0.7;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Secure payment indicator */
+.secure-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: #666;
+  font-size: 13px;
+}
+
+.secure-payment svg {
+  margin-right: 6px;
+  fill: #666;
+}
+
+/* Card icon indicators */
+.card-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.card-icons img {
+  height: 28px;
+  opacity: 0.7;
+}
+
+/* Dialog improvements */
+.custom-dialog {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.dialog-header {
+  background-color: #606060;
+  padding: 15px 20px;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.dialog-content {
+  padding: 20px;
+  margin-bottom: 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+.dialog-button {
+  background-color: #606060;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dialog-button:hover {
+  background-color: #505050;
+  transform: scale(1.05);
+}
+
+.custom-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+/* Processing indicator */
+.processing-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.processing-indicator .spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error message */
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(244, 67, 54, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Booking Container */
+.booking-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 0; /* Container shifted to left */
+  flex: 0 0 60%;
+}
+
+/* Heading */
+.booking-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Input Rows with Labels */
+.input-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-row label {
+  min-width: 150px;
+  font-weight: bold;
+  color: #444;
+}
+
+.input-row input,
+.input-row select {
+  flex: 1;
+}
+
+/* Address Row */
+.address-row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.address-row label {
+  min-width: 150px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+}
+
+.address-fields {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+}
+
+.address-fields input {
+  flex: 1;
+  min-width: calc(33% - 10px);
+}
+
+/* Dropdown with Label */
+.dropdown {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.dropdown label {
+  min-width: 150px;
+  font-weight: bold;
+  color: #444;
+}
+
+.dropdown select {
+  flex: 1;
+}
+
+/* Input and Select Fields */
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Textarea */
+.booking-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Labels */
+.booking-container label {
+  font-size: 16px;
+  display: block;
+  color: #444;
+}
+
+/* Button */
+.booking-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #606060;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.booking-container button:hover {
+  background-color: #505050;
+  transform: scale(1.05);
+}
+
+/* Location Button */
+.location-btn {
+  margin: 10px 0 20px;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 20px;
+}
+
+/* Date and Time Container */
+.date-time-container {
+  display: flex;
+  gap: 30px; /* Increased gap between date and time */
+  margin: 15px 0;
+}
+
+.date-time-container .input-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.date-time-container .input-group label {
+  min-width: 150px;
+  font-weight: bold;
+}
+
+/* Input Group */
+.input-group {
+  margin: 10px 0;
+}
+
+/* Amount Display */
+.booking-container h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Focus Effects */
+.booking-container select:focus,
+.booking-container input:focus,
+.booking-container textarea:focus {
+  outline: none;
+  border-color: #606060;
+  box-shadow: 0 0 5px rgba(96, 96, 96, 0.5);
+}
+
+/* Service Icons Display */
+.service-icons {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 650px; /* Approximate height to match the booking form */
+}
+
+.service-icons h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Icon Group for 2x2 layout */
+.icon-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.service-icon {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.service-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon.selected {
+  border-color: #606060;
+  background-color: rgba(96, 96, 96, 0.1);
+}
+
+.service-icon .icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.service-icon p {
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.service-icon .price {
+  color: #606060;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Dialog animation */
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Payment status indicators */
+.payment-status {
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.payment-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #2e7d32;
+}
+
+.payment-error {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .page-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .booking-container,
+  .service-icons {
+    max-width: 90%;
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-row,
+  .dropdown,
+  .address-row,
+  .date-time-container .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .input-row label,
+  .dropdown label,
+  .address-row label,
+  .date-time-container .input-group label {
+    margin-bottom: 5px;
+    min-width: 100%;
+  }
+  
+  .address-fields input {
+    min-width: 100%;
+  }
+  
+  .date-time-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .icon-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .service-icon {
+    width: 100%;
+  }
+  
+  /* Make custom dialog responsive */
+  .custom-dialog {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

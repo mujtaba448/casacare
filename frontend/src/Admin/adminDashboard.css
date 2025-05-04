@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Softer Light Grey */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Admin Dashboard Layout */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background: #333; /* Dark Grey */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  padding: 12px 15px;
+  margin: 5px 0;
+  background: #444; /* Slightly lighter grey */
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #555;
+  transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #d9534f; /* Red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background: #c9302c; /* Darker Red */
+}
+
+/* Main Content Section */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #ffffff; /* White background for clarity */
+}
+
+/* Dashboard Sections */
+.dashboard-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background: #555;
+  color: #fff;
+}
+
+/* Scrollable Tables */
+.scrollable-table {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+/* Bill Input Fields */
+.bill-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.bill-input input,
+.bill-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f7f7f7;
+}
+
+.bill-textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+/* Bill Details Section */
+.bill-details {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bill-details h3 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.bill-details p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Print Button */
+.print-btn {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.print-btn:hover {
+  background: #0056b3;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .dashboard-content {
+    padding: 10px;
+  }
+
+  .sidebar ul li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
