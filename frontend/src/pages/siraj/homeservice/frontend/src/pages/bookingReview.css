@@ -1,0 +1,71 @@
+.booking-container, .review-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1f2937;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .booking-container h2,
+  .review-container h2,
+  .review-container h3 {
+    text-align: center;
+    color: #f9fafb;
+  }
+  
+  .booking-container ul,
+  .review-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .booking-container li,
+  .review-container li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cancel-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-button:hover {
+    background-color: #dc2626;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form button:hover {
+    background-color: #059669;
+  }
+  

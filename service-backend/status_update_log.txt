@@ -1,0 +1,11 @@
+2025-05-12 00:13:51 - Received data: {"bookingId":7,"status":"confirmed"}
+2025-05-12 00:16:45 - Received data: {"bookingId":7,"status":"confirmed"}
+2025-05-19 14:33:45 - Received data: {"bookingId":17,"status":"cancelled"}
+2025-05-19 14:39:36 - Received data: {"bookingId":17,"status":"cancelled"}
+2025-05-19 14:39:36 - Successfully updated booking #17 status from confirmed to cancelled
+2025-05-19 14:39:43 - Received data: {"bookingId":16,"status":"completed"}
+2025-05-19 14:39:43 - Successfully updated booking #16 status from confirmed to completed
+2025-05-19 14:39:49 - Received data: {"bookingId":15,"status":"completed"}
+2025-05-19 14:39:49 - Successfully updated booking #15 status from confirmed to completed
+2025-05-19 14:39:53 - Received data: {"bookingId":14,"status":"cancelled"}
+2025-05-19 14:39:53 - Successfully updated booking #14 status from confirmed to cancelled

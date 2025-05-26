@@ -1,0 +1,5 @@
+2025-05-11 23:18:58 - Payment Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp' in 'field list'
+2025-05-11 23:19:02 - Payment Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp' in 'field list'
+2025-05-11 23:20:40 - Payment Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp' in 'field list'
+2025-05-11 23:20:58 - Payment Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp' in 'field list'
+2025-05-11 23:24:19 - Payment Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp' in 'field list'

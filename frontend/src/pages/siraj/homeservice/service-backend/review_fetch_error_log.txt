@@ -1,0 +1,2 @@
+2025-05-17 16:00:59 - Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'service.reviews' doesn't exist
+2025-05-17 16:00:59 - Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'service.reviews' doesn't exist
