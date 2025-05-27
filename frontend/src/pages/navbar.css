@@ -10,16 +10,49 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo Styling */
-.navbar-logo a {
+/* Logo Container */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+/* Logo Image */
+.logo-image {
+    height: 40px;
+    width: auto;
+    margin-right: 12px;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+}
+
+.logo-link:hover .logo-image {
+    filter: brightness(1.3);
+}
+
+/* Logo Text */
+.logo-text {
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
 }
 
-.navbar-logo a:hover {
+.logo-link:hover .logo-text {
     color: #9ca3af; /* Light grey */
 }
 
@@ -52,7 +85,6 @@
 .navbar-links a:nth-child(4) {
     margin-left: 10px;
 }
-
 
 /* Username Styling */
 .navbar-username {
@@ -102,5 +134,27 @@
 
     .navbar-username {
         font-size: 16px;
+    }
+
+    /* Mobile logo adjustments */
+    .logo-image {
+        height: 35px;
+        margin-right: 8px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+}
+
+/* Additional logo variants for different screen sizes */
+@media (max-width: 480px) {
+    .logo-image {
+        height: 30px;
+        margin-right: 6px;
+    }
+
+    .logo-text {
+        font-size: 18px;
     }
 }

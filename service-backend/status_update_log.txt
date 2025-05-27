@@ -9,3 +9,17 @@
 2025-05-19 14:39:49 - Successfully updated booking #15 status from confirmed to completed
 2025-05-19 14:39:53 - Received data: {"bookingId":14,"status":"cancelled"}
 2025-05-19 14:39:53 - Successfully updated booking #14 status from confirmed to cancelled
+2025-05-27 12:25:07 - Received data: {"bookingId":26,"status":"confirmed"}
+2025-05-27 12:25:07 - Successfully updated booking #26 status from pending to confirmed
+2025-05-27 12:25:14 - Received data: {"bookingId":21,"status":"confirmed"}
+2025-05-27 12:25:14 - Successfully updated booking #21 status from pending to confirmed
+2025-05-27 12:25:16 - Received data: {"bookingId":20,"status":"cancelled"}
+2025-05-27 12:25:16 - Successfully updated booking #20 status from pending to cancelled
+2025-05-27 12:25:19 - Received data: {"bookingId":21,"status":"completed"}
+2025-05-27 12:25:19 - Successfully updated booking #21 status from confirmed to completed
+2025-05-27 12:25:21 - Received data: {"bookingId":22,"status":"completed"}
+2025-05-27 12:25:21 - Successfully updated booking #22 status from confirmed to completed
+2025-05-27 12:25:23 - Received data: {"bookingId":19,"status":"completed"}
+2025-05-27 12:25:23 - Successfully updated booking #19 status from confirmed to completed
+2025-05-27 12:25:32 - Received data: {"bookingId":26,"status":"completed"}
+2025-05-27 12:25:32 - Successfully updated booking #26 status from confirmed to completed

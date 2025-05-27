@@ -1,4 +1,4 @@
-/* PaymentPage.css - Enhanced Version */
+/* PaymentPage.css - Enhanced Version with Light Placeholders */
 * {
   margin: 0;
   padding: 0;
@@ -247,6 +247,7 @@ h1 {
   margin-bottom: 25px;
   word-spacing: 4px;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0.8; /* Made lighter */
 }
 
 .card-details {
@@ -266,6 +267,10 @@ h1 {
   opacity: 0.8;
   margin-bottom: 5px;
   letter-spacing: 1px;
+}
+
+.card-holder div, .card-expiry div {
+  opacity: 0.7; /* Made placeholder text lighter */
 }
 
 /* Payment Form Styles */
@@ -336,6 +341,13 @@ select {
   font-size: 16px;
   transition: all 0.3s ease;
   background-color: #f8fafc;
+}
+
+/* Light placeholders for all inputs */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #cbd5e0;
+  opacity: 0.7;
 }
 
 input[type="text"]:hover,
@@ -437,8 +449,6 @@ button {
   color: #4a5568;
   flex: 1;
 }
-
-
 
 .cancel-btn:hover {
   background-color: #e2e8f0;
@@ -629,7 +639,6 @@ button:disabled {
   margin-top: 30px;
 }
 
-
 .home-btn {
   background-color: #4CAF50;
   color: white;
@@ -645,7 +654,7 @@ button:disabled {
 }
 
 .download-receipt-btn {
-  background-color: #4CAF50;
+  background-color: #2196F3;
   color: white;
   padding: 14px 28px;
   border-radius: 10px;
@@ -655,11 +664,6 @@ button:disabled {
   cursor: pointer;
   margin-top: 30px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
-}
-
-.download-receipt-btn {
-  background-color: #2196F3;
   box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
 }
 
@@ -673,6 +677,30 @@ button:disabled {
   background-color: #1976D2;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
+}
+
+/* Receipt Logo Background Styles */
+.receipt-with-logo {
+  position: relative;
+}
+
+.receipt-logo-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  opacity: 0.05;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.receipt-content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Responsive adjustments */
@@ -724,6 +752,11 @@ button:disabled {
   .payment-success h2 {
     font-size: 1.6rem;
   }
+  
+  .success-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -743,11 +776,4 @@ button:disabled {
   .otp-code {
     font-size: 28px;
   }
-
-  @media (max-width: 480px) {
-  .success-buttons {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
 }

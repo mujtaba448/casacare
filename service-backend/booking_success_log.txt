@@ -19,3 +19,8 @@
 2025-05-19 15:16:24 - Booking created: ID: 19, Name: kunal, Contact: 9844561974, Service: Electrician, Amount: 1150
 2025-05-20 14:49:00 - Booking created: ID: 20, Name: Mujtaba Zafar, Contact: 9836436729, Service: Electrician, Amount: 1150
 2025-05-20 14:50:30 - Booking created: ID: 21, Name: Mujtaba Zafar, Contact: 9375648364, Service: Electrician, Amount: 1150
+2025-05-26 22:13:57 - Booking created: ID: 22, Name: rehan, Contact: 9956844256, Service: Electrician, Amount: 1150
+2025-05-26 23:12:38 - Booking created: ID: 23, Name: Mujtaba Zafar, Contact: 9345687654, Service: Electrician, Amount: 1150
+2025-05-26 23:17:08 - Booking created: ID: 24, Name: Mujtaba Zafar, Contact: 6767467676, Service: Electrician, Amount: 1150
+2025-05-26 23:25:01 - Booking created: ID: 25, Name: Mujtaba Zafar, Contact: 9673657645, Service: Electrician, Amount: 1150
+2025-05-26 23:29:02 - Booking created: ID: 26, Name: Mujtaba Zafar, Contact: 5464565465, Service: Electrician, Amount: 1150
